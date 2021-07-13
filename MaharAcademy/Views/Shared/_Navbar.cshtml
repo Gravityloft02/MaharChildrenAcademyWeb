@@ -1,0 +1,75 @@
+﻿<style>
+    .dropdown-item:focus, .dropdown-item:hover {
+        background-color: #4C91DF;
+        font-family: Lora,sans-serif;
+        text-decoration: none;
+    }
+</style>
+
+<div class="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#1565C0">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" title="Home" href="@Url.Action("Index","Home")">Home</a></li>
+                   
+                    <li class="nav-item dropdown">
+                        <a title="About Us" href="#" class="nav-link dropdown-toggle" id="AboutDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="AboutDropdownMenuLink">
+                            <li class="dropdown-item"><a title="Brief History" href="@Url.Action("BriefHistory","About")">Brief History</a></li>
+                            <li class="dropdown-item"><a title="Vision" href="@Url.Action("Vision","About")">Vision</a></li>
+                            <li class="dropdown-item"><a title="The Principal" href="@Url.Action("ThePrincipal","About")">The Principal</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a title="Infrastructure" href="#" class="nav-link dropdown-toggle" id="InfrastructureDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Infrastructure<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="InfrastructureDropdownMenuLink">
+                            <li class="dropdown-item"><a title="Classroom" href="@Url.Action("Classroom","Infrastructure")">Classroom</a></li>
+                            <li class="dropdown-item"><a title="Computer Lab" href="@Url.Action("ComputerLab","Infrastructure")">Computer Lab</a></li>
+                            <li class="dropdown-item"><a title="Playground" href="@Url.Action("Playground","Infrastructure")">Playground</a></li>
+                            <li class="dropdown-item"><a title="Library" href="@Url.Action("Library","Infrastructure")">Library</a></li>
+                            <li class="dropdown-item"><a title="Infirmary" href="@Url.Action("Infirmary","Infrastructure")">Infirmary</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" title="Uniform" href="@Url.Action("Index","Uniform")">Uniform</a></li>
+                    <li class="nav-item dropdown">
+                        <a title="Gallery" href="#" class="nav-link dropdown-toggle" id="GalleryDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="GalleryDropdownMenuLink">
+                            <li class="dropdown-item"><a title="Photos" href="#">Photos</a></li>
+                            <li class="dropdown-item"><a title="Videos" href="#">Videos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a title="Guidelines" href="#" class="nav-link dropdown-toggle" id="GuidelinesDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Guidelines <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="GuidelinesDropdownMenuLink">
+                            <li class="dropdown-item"><a title="Guidelines For Parents" href="#">Guidelines For Parents</a></li>
+                            <li class="dropdown-item"><a title="Guidelines For Students" href="#">Guidelines For Students</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a title="Gallery" href="#" class="nav-link dropdown-toggle" id="AcademicDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academic Calendar <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="AcademicDropdownMenuLink">
+                            <li class="dropdown-item"><a title="Photo" href="@Url.Action("PrimarySchoolCalendar","AcademicCalendar")">Primary School Calender</a></li>
+                            <li class="dropdown-item"><a title="Video" href="@Url.Action("PrePrimarySchoolCalendar","AcademicCalendar")">Pre-Primary School Calender</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" title="Contact Us" href="@Url.Action("Index","ContactUs")">Contact Us</a></li>
+
+               
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahar Children Academy -@ViewBag.Title</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/css/MaharStyle.css" rel="stylesheet" />
+    <link href="~/fonts/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="~/fonts/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/Content/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/css/owl.theme.default.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header>
+        @Html.Partial("_Header")
+        @Html.Partial("_Navbar")
+    </header>
+
+
+    @RenderBody()
+
+    @Html.Partial("_Footer")
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="~/Scripts/js/lightslider.js"></script>
+    <script src="~/Scripts/js/owl.carousel.min.js"></script>
+    <script src="~/fonts/fontawesome-free/js/all.min.js"></script>
+    <script src="~/fonts/fontawesome-free/js/fontawesome.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 4000,
+            loop: true,
+            // Advances
+            margin: 5,
+            nav: true,
+            navText: ["&lt;", "&gt;"],
+            autoHeight: false,
+            autoWidth: false,
+            stagePadding: 0,
+            rtl: false,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 1,
+
+                },
+                1000: {
+                    items: 1,
+
+                }
+
+            }
+
+        });
+
+        $('#slider_1644').owlCarousel({
+            items: 1,
+            smartSpeed: 200,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 200,
+            fluidSpeed: 200,
+            autoplaySpeed: 200,
+            navSpeed: 200,
+            dotsSpeed: 200,
+            loop: true,
+            autoplayHoverPause: true,
+            nav: true,
+            navText: ['', ''],
+            dots: false,
+            responsiveRefreshRate: 200,
+            slideBy: 1,
+            mergeFit: true,
+            mouseDrag: true,
+            touchDrag: true
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
